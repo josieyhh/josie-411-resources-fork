@@ -7,6 +7,7 @@ def hello():
     response = make_response(
         {
             'response': 'Hello, World!',
+            'response': 'Hello, Josie!',
             'status': 200
         }
     )
