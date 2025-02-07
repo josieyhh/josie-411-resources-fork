@@ -14,7 +14,7 @@ def hello():
     )
     return response
 
-@app.rouute('/repeat', methods = ['GET'])
+@app.route('/repeat', methods = ['GET'])
 def repeat():
     input_value = request.args.get('input', '')
     response = make_response({
