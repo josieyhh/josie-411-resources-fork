@@ -14,6 +14,15 @@ def hello():
     )
     return response
 
+def repeat():
+    input_value = request.args.get('input', '')
+    response = make_response({
+        'body': input_value,
+        'status': 200 
+    {)
+    return response 
+
+
 if __name__ == '__main__':
     # By default flask is only accessible from localhost.
     # Set this to '0.0.0.0' to make it accessible from any IP address
