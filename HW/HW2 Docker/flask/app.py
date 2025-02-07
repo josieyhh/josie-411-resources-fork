@@ -25,6 +25,15 @@ def repeat():
     )
     return response 
 
+@app.route('/health')
+@app.route('/healthcheck')
+def health():
+    response = make_response(
+        {
+            'body': 'OK',
+            'status': 200
+        }
+    )
 
 if __name__ == '__main__':
     # By default flask is only accessible from localhost.
