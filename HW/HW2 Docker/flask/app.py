@@ -20,7 +20,7 @@ def repeat():
     response = make_response({
         'body': input_value,
         'status': 200 
-    {)
+    })
     return response 
 
 
