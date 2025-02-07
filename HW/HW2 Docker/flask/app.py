@@ -17,10 +17,12 @@ def hello():
 @app.route('/repeat', methods = ['GET'])
 def repeat():
     input_value = request.args.get('input', '')
-    response = make_response({
+    response = make_response(
+        {
         'body': input_value,
         'status': 200 
-    })
+        }
+    )
     return response 
 
 
